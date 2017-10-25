@@ -22,7 +22,8 @@ GameObject:
   - component: {fileID: 33976085797820872}
   - component: {fileID: 23419322983068016}
   - component: {fileID: 95082428760177452}
-  - component: {fileID: 136366174245582138}
+  - component: {fileID: 136571820317841166}
+  - component: {fileID: 114225264307975988}
   m_Layer: 9
   m_Name: SheepWhite
   m_TagString: Untagged
@@ -37,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1116636510219390}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -3, z: 0}
+  m_LocalPosition: {x: -6.35, y: -3, z: -0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -52,6 +53,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -67,6 +69,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -99,7 +102,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!136 &136366174245582138
+--- !u!114 &114225264307975988
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1116636510219390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03ee9bbd418254052b533d3a71780d45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_killX: -15
+  m_ScrollRate: -3
+--- !u!136 &136571820317841166
 CapsuleCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -108,7 +124,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.34
-  m_Height: 1.3
+  m_Radius: 0.34225947
+  m_Height: 1.24
   m_Direction: 2
-  m_Center: {x: 0.00000005960466, y: 0.4438215, z: 0.119502574}
+  m_Center: {x: -0.022259414, y: 0.4438215, z: 0.119502604}
